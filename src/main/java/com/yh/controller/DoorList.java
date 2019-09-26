@@ -22,22 +22,22 @@ public class DoorList {
     @Autowired
     DoorService doorService;
 
-    @RequestMapping("/doorList")
-    public String doorList(Model model){
-        List<Door> list = doorService.findAll();
-        for (Door d:list
-             ) {
-            System.out.println(d);
-        }
-        //存入Model
-        model.addAttribute("list",list);
-        return "door_list";
-    }
-
-    @RequestMapping("/index")
-    public String getIndex(){
-        return "index";
-    }
+    //@RequestMapping("/doorList")
+    //public String doorList(Model model){
+    //    List<Door> list = doorService.findAll();
+    //    for (Door d:list
+    //         ) {
+    //        System.out.println(d);
+    //    }
+    //    //存入Model
+    //    model.addAttribute("list",list);
+    //    return "door_list";
+    //}
+    //
+    //@RequestMapping("/index")
+    //public String getIndex(){
+    //    return "index";
+    //}
 
 
 }

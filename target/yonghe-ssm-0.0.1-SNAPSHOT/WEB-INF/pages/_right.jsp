@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div id="welcome">
-		欢迎访问永和大王门店管理系统...
+		欢迎访问管理系统...
 	</div>
 </body>
 </html>
