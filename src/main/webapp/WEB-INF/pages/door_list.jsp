@@ -17,7 +17,23 @@
 	th.width-80{ width: 80px; }
 	hr{ margin-bottom:20px; border:1px solid #aaa; }
 	#add-door{text-align:center;font-size:20px;}
+	#doorMB:hover{background-color: #DCDCDC}
 </style>
+
+	<script type="application/javascript">
+		window.onload=function(){
+			var param = '${param}';
+			console.log(param);
+			var index = param.indexOf("=");
+			resu = param.substring(index+1,index+2);
+			console.log(resu);
+			// alert('添加成功+'+resu+'+提醒页面')
+			if (resu>0){
+				alert('添加成功+'+resu+'+提醒页面')
+			}
+		}
+	</script>
+
 </head>
 <body><!-- body-start  -->
 
@@ -36,21 +52,20 @@
 	</tr>
 
 	<!-- 模版数据 -->
-	<tr>
-		<td>1</td>
-		<td>永和大王(北三环西路店)</td>
-		<td>010-62112313</td>
-		<td>北三环西路甲18号院-1号大钟寺中坤广场d座</td>
+	<c:forEach items="${list}" var="door" varStatus="status">
+	<tr id="doorMB">
+		<td>${status.count}</td>
+		<td>${door.name}</td>
+		<td>${door.tel}</td>
+		<td>${door.addr}</td>
 		<td>
-			<a href="doorDelete?id=">删除</a>
+			<a href="doorDelete?id=${door.id}">删除</a>
 			&nbsp;|&nbsp;
-			<a href="doorInfo?id=">修改</a>
+			<a href="doorInfo?id=${door.id}">修改</a>
 		</td>
 	</tr>
-	
+	</c:forEach>
 
-
-	
 </table>
 </body><!-- body-end  -->
 </html>

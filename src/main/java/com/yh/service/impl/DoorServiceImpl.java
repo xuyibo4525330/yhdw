@@ -25,4 +25,18 @@ public class DoorServiceImpl implements DoorService {
         List<Door> all = doorMapper.findAll();
         return all;
     }
+    
+    public int doorAdd(Door door){
+        int rows = doorMapper.doorAdd(door);
+        return rows;
+    }
+
+    public int doorDelete(Integer id) {
+        return doorMapper.doorDelete(id);
+    }
+
+    public Door doorSelectOne(Integer id) {
+        return doorMapper.doorSelectOne(id);
+    }
+
 }

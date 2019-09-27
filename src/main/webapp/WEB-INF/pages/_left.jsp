@@ -5,35 +5,6 @@
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="static\font-awesome-4.7.0\css\font-awesome.min.css">
 
-<%--    <style>--%>
-<%--        body {--%>
-<%--            background: #222D32;--%>
-<%--            margin: 0px;--%>
-<%--        }--%>
-
-<%--        .menu-bar a {--%>
-<%--            color: #fff;--%>
-<%--            text-decoration: none;--%>
-<%--        }--%>
-
-<%--        .menu-bar {--%>
-<%--            font-size: 22px;--%>
-<%--            border-bottom: 1px solid #fff;--%>
-<%--            height: 40px;--%>
-<%--            line-height: 40px;--%>
-<%--            text-indent: 10px;--%>
-<%--            letter-spacing: 5px;--%>
-<%--        }--%>
-
-<%--        .menu-bar:first-child {--%>
-<%--            border-top: 1px solid #fff;--%>
-<%--        }--%>
-
-<%--        .menu-bar:hover {--%>
-<%--            background: #797979;--%>
-<%--        }--%>
-<%--    </style>--%>
-
     <style>
         body{
             background-color: #222D32;
@@ -47,7 +18,7 @@
             letter-spacing: 3px;
         }
         .menu-bar:first-child{
-            /*border-bottom: 1px solid #EDEDED;*/
+            border-bottom: 1px solid #EDEDED;
         }
         .menu-bar:hover{
             background-color: #EDEDED;
@@ -58,6 +29,7 @@
             text-decoration:none;
         }
     </style>
+
 </head>
 <body>
 <div class="menu-bar">
@@ -69,7 +41,7 @@
 </div>
 <div class="menu-bar">
 
-    <a href="doorList" target="rightFrame"><i class="fa fa-1x fa-bar-chart" aria-hidden="true" style="color:white;text-align: left"></i> 商品管理</a>
+    <a href="door_list" target="rightFrame"><i class="fa fa-1x fa-bar-chart" aria-hidden="true" style="color:white;text-align: left"></i> 商品管理</a>
 </div>
 </body>
 </html>

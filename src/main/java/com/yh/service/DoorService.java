@@ -15,6 +15,21 @@ import java.util.List;
  */
 public interface DoorService {
 
-public List<Door> findAll();
+    public List<Door> findAll();
 
+    public int doorAdd(Door door);
+
+    /**
+    * @Title: 删除门店
+    * @author xyb
+    * @date 2019/9/27 16:00
+    */
+    public int doorDelete(Integer id);
+
+    /**
+    * @Title: 基于ID查询门店信息
+    * @author xyb
+    * @date 2019/9/27 16:25
+    */
+    Door doorSelectOne(Integer id);
 }

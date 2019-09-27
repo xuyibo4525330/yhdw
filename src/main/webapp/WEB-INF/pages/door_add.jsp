@@ -9,7 +9,7 @@
 	h2{ text-align: center;font-size:26px; }
 	table{ margin: 30px auto; text-align: center; border-collapse:collapse; width:50%; }
 	td, th{ padding: 7px;font-size:18px;}
-	hr{ margin-bottom:20px; border:1px solid #aaa; }
+	hr{  margin-bottom:20px;border:1px solid #aaa; }
 	input,select,textarea{ width:284px; height:30px; background:#EDEDED; border:1px solid #999; text-indent:5px; font-size:18px; }
 	input[type='submit']{ width:130px; height:36px; cursor:pointer; border-radius:5px 5px 5px 5px; background:#ddd; }
 	select{text-indent:0px;}
