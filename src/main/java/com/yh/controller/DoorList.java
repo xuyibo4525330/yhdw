@@ -69,6 +69,6 @@ public class DoorList {
         //根据Id查询门店信息回显
         Door door = doorService.doorSelectOne(id);
         model.addAttribute("door",door);
-        return "doorUpdate";
+        return "door_update";
     }
 }
